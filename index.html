@@ -6,48 +6,94 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pizza Time</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
     <header>
-        <h3>Pizza Time</h3>
-        <nav class="menuBandeau">
-            <ul>
-                <li><a href="index.html">Home</a>
-                </li>
-                <li><a href="index.html">Menu</a>
-                </li>
-                <li><a href="index.html">Promo</a>
-                </li>
-            </ul>
-            <div classe="recherche">recherche</div>
-            <div classe="panier">panier</div>
-            <divc><button>login</button> </div>
+        <img src="image/pizza logo.svg" alt="">
+        <h3> Pizza Time</h3>
 
-        </nav>
+        <ul>
+            <li><a href="index.html">Home</a>
+            </li>
+            <li><a href="index.html">Menu</a>
+            </li>
+            <li><a href="index.html">Promo</a>
+            </li>
+        </ul>
+
+        <form action="#" class="hidden">
+            <input type="search" name="search" id="">
+        </form>
+        <button type="button"> <img src="image/search.svg" alt=""></button>
+
+        <button type="button"><img src="image/cart.svg" alt=""></button>
+
+        <button type="button" class="callToAction">sign in</button>
+
+
+
 
     </header>
 
-    <div>
+    <div class="presentation ">
         <div class="presentationText">
             <h1>Friday pizza!</h1>
             <p>Time to enjoy our delicious pizza</p>
-            <button>ORDER NOW</button>
+            <button class="callToAction">ORDER NOW</button>
         </div>
-        <img class="presentationImage" src="" alt="">
+        <img class="presentationImage" src="image/margherita-pizza 2.jpg" alt="">
     </div>
-    <nav>
-        <div>
-            <img src="" alt="">
-            <h4></h4>
-            <p></p>
-            <p></p>
-            <menu type="toolbar"></menu>
 
-            <button>ADD TO CART</button>
+    <div>
+        <h2>Recommended Menu</h2>
+        <div class="carroussel">
+            <div class="produit border">
+                <img src="image/pizza 1.png" alt="" class="imageProduit">
+                <div class="">
+                    <h2>Cheese Lovers</h2>
+                    <p>Combination of Alfredo sauce and two cheeses : Romano and Parmesan.</p>
+                    <p>$20.00</p>
+                    <select name="size" id="">
+                        <option value="regular">Regular</option>
+                        <option value="regular">Regular</option>
+                        <option value="regular">Regular</option>
+                    </select>
+
+                    <button type="button" class="callToAction">ADD TO CART</button>
+                </div>
+            </div>
+            <div class="produit border">
+                <img src="" alt="">
+                <h4>Cheese Lovers</h4>
+                <p>Combination of Alfredo sauce and two cheeses : Romano and Parmesan.</p>
+                <p>$20.00</p>
+                <select name="size" id="">
+                    <option value="regular">Regular</option>
+                </select>
+
+                <button type="button" class="callToAction">ADD TO CART</button>
+            </div>
+            <div class="produit border">
+                <img src="" alt="">
+                <h4>Cheese Lovers</h4>
+                <p>Combination of Alfredo sauce and two cheeses : Romano and Parmesan.</p>
+                <p>$20.00</p>
+                <select name="size" id="">
+                    <option value="regular">Regular</option>
+                </select>
+
+                <button type="button" class="callToAction">ADD TO CART</button>
+            </div>
+
+
         </div>
-
-    </nav>
+    </div>
 
 
 </body>

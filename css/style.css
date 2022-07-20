@@ -1,0 +1,107 @@
+body {
+    font-family: 'Fira Sans', sans-serif;
+    padding-left: 5%;
+    padding-top: .2rem;
+}
+
+h2 {
+    text-align: center;
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+}
+
+.presentation {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: left;
+
+}
+
+
+.presentationText {
+    z-index: 5;
+}
+
+.presentationImage {
+    z-index: 0;
+}
+
+
+
+
+ul {
+    display: flex;
+    list-style-type: none;
+
+}
+
+header {
+    display: flex;
+    align-content: flex-end;
+}
+
+button {
+    border: 0ch;
+    background-color: transparent;
+}
+
+button:hover {
+    text-decoration: underline;
+    text-decoration-color: rgb(41, 57, 176);
+
+
+}
+
+ul a {
+    display: inline;
+    margin: 0px .2rem;
+    text-decoration: none;
+    color: black;
+}
+
+ul a:hover {
+    text-decoration: underline;
+    text-decoration-color: rgb(41, 57, 176);
+    text-decoration-thickness: .2rem;
+
+}
+
+.callToAction {
+    background-color: #EC0000;
+    border-radius: 10px;
+    text-transform: uppercase;
+    padding: .1rem .5rem .1rem;
+}
+
+.hidden {
+    transform: scale(0);
+}
+
+.carroussel {
+    display: flex;
+    justify-content: space-between;
+}
+
+.produit {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    max-width: 200px;
+}
+
+.imageProduit {
+    padding: 10%;
+    border-top: 2px solid gray;
+    border-radius: 100px;
+}
+
+.border {
+    border-bottom: 2px solid gray;
+    border-left: 2px solid gray;
+    border-right: 2px solid gray;
+
+
+}
