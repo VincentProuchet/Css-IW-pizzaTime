@@ -14,25 +14,19 @@ header {
     justify-content: space-around;
 }
 
-.presentation {
+section {
+
     display: flex;
 
-    text-align: left;
-
-}
-
-
-.presentationText {
+    height: 400px;
     min-width: 200;
-    z-index: 5;
+    text-align: left;
+    background-image: url("margherita-pizza.jpg");
+    background-position: right;
+    background-size: 70%;
+    background- background-repeat: no-repeat;
 }
 
-#banner_img {
-    background-image: url("margherita-pizza 2.jpg");
-    background-repeat: no-repeat;
-    size: 100%;
-    z-index: 0;
-}
 
 
 
@@ -87,6 +81,7 @@ ul a:hover {
 
 .carroussel {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
 }
 
@@ -102,4 +97,11 @@ ul a:hover {
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
     padding: 1%;
+
+}
+
+.produit:hover {
+    box-shadow: 8px 10px 43px -2px rgba(0, 0, 0, 0.46);
+    -webkit-box-shadow: 8px 10px 43px -2px rgba(0, 0, 0, 0.46);
+    -moz-box-shadow: 8px 10px 43px -2px rgba(0, 0, 0, 0.46);
 }
