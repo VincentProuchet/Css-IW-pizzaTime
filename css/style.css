@@ -1,8 +1,13 @@
 body {
 
     font-family: 'Fira Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19px;
     padding-left: 5%;
     padding-top: .2rem;
+    position: relative;
+
 }
 
 
@@ -18,43 +23,16 @@ h3 {
 }
 
 nav {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-}
-
-/*
-Banner 
-*/
-section {
 
     display: flex;
     align-items: center;
-    text-align: left;
-    min-width: 375px;
-    min-height: 375x;
-    max-height: 375x;
-    background: linear-gradient(to right, white, 88%, transparent), url("margherita-pizza.jpg");
+    justify-content: space-evenly;
 
-    background-position-x: right;
-    background-repeat: no-repeat;
-    background-size: contain;
 }
-
-
-
-
-
 
 ul {
     display: flex;
     list-style-type: none;
-
-}
-
-header {
-    display: flex;
-    align-content: flex-end;
 }
 
 button {
@@ -62,34 +40,68 @@ button {
     background-color: transparent;
 }
 
-button:hover {
-    text-decoration: underline;
-    text-decoration-color: rgb(41, 57, 176);
 
+
+
+/*
+Banner 
+*/
+section {
+    font-size: 72px;
+    font-weight: 700;
+    line-height: 74px;
+
+    display: flex;
+    align-items: center;
+    text-align: left;
+
+    background: right/contain no-repeat linear-gradient(to right, white, 88%, transparent), url("margherita-pizza.jpg");
+
+    background-position-x: right;
+    background-repeat: no-repeat;
 
 }
+
+section p {
+    /*
+    petit paragraphe de la bannière
+*/
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 58px;
+}
+
+
 
 /* 
 transformer les hyperlink
 en bouton de menus
 */
+
 ul a {
-    display: inline;
     margin: 0px .2rem;
     text-decoration: none;
     color: black;
+}
+
+.home {
+    color: #EC0000;
 }
 
 /*
 et le petit effet quand on passe la souris dessus
 */
 ul a:hover {
-    color: ;
+
     text-decoration: underline;
     text-decoration-color: rgb(41, 57, 176);
     text-decoration-style: solid;
     text-decoration-thickness: 5px;
 
+}
+
+ul button img:hover {
+    background-color: rgba(15, 48, 149, 0.516);
 }
 
 /*
@@ -97,18 +109,26 @@ les gros boutons rouges
 */
 .callToAction {
     font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: white;
+    font-style: bold;
     background-color: #EC0000;
     border-radius: 10px;
     text-transform: uppercase;
-    padding: .1rem .5rem .1rem;
-    max-width: 50%;
+    padding: .1rem 1rem .1rem;
+    margin: 1%;
+
+
 }
 
 .callToAction:hover {
-    text-decoration-color: rgb(41, 57, 176);
-    text-decoration-style: solid;
-    text-decoration-thickness: 5px;
+    box-shadow: 1px 3px 13px 3px rgba(236, 0, 0, 0.31);
+    -webkit-box-shadow: 1px 3px 13px 3px rgba(236, 0, 0, 0.31);
+    -moz-box-shadow: 1px 3px 13px 3px rgba(236, 0, 0, 0.31);
+
 }
+
 
 /*
 masquage du champ recherche
@@ -123,12 +143,15 @@ title over carroussel
 */
 h2 {
     text-align: center;
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 74px;
 }
 
 .carroussel {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 
 /*
@@ -147,10 +170,17 @@ Produits
     border-top-right-radius: 200px;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
-    padding: 3%;
-    margin: 2%;
+    padding: 1%;
+    margin: 1%;
 
 }
+
+.produit p {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 18px;
+}
+
 
 .produit:hover {
     box-shadow: 8px 10px 43px -2px rgba(0, 0, 0, 0.46);
@@ -161,4 +191,8 @@ Produits
 .prix {
     color: #05A84B;
     font-weight: 600;
+}
+
+select {
+    border-radius: 15px;
 }
