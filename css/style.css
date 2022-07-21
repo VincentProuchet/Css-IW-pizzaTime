@@ -191,6 +191,7 @@ Produits
 .prix {
     color: #05A84B;
     font-weight: 600;
+    text-shadow: 1px 1px 14px rgba(5, 168, 75, 0.46);
 }
 
 select {
